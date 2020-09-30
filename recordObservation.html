@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RECORD OBSERVATION</title>
+</head>
+<body>
+<div style="background-color: darkgray;width: fit-content">
+    <div>
+        <h4 style="text-align: center">RECORD OBSERVATION</h4>
+        <form onsubmit="return false">
+            <div class="record_observation" style="background-color: aqua">
+
+                <table>
+                    <tr>
+                        <td>Site Habitat:</td>
+                        <td><select id="siteHabitat_id_input">
+                            <option value="">Select one</option>
+                        </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Site Habitat ID:</td>
+                        <td id="siteHabitat_id"></td>
+                    </tr>
+                    <tr>
+                        <td>Site Habitat name:</td>
+                        <td id="siteHabitat_name"></td>
+                    </tr>
+                    <tr>
+                        <td>Site Name:</td>
+                        <td id="site_name"></td>
+                    </tr>
+                </table>
+            </div>
+
+
+            <div class="div_survey" style="margin-top: 20px;background-color: aqua">
+                <table>
+                    <tr>
+                        <td>Survey:</td>
+                        <td> <select id="survey_input">
+                            <option value="">Select one</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td>Survey ID:</td>
+                        <td id="survey_id"></td>
+                    </tr>
+                    <tr>
+                        <td>Survey Name:</td>
+                        <td id="survey_name"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="div_animal" style="margin-top: 20px;background-color: aqua">
+                <table>
+                    <tr>
+                        <td>Animal:</td>
+                        <td> <select id="animal_input">
+                            <option value="">Select one</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td>animal ID:</td>
+                        <td id="animal_id"></td>
+                    </tr>
+                    <tr>
+                        <td>Common Name:</td>
+                        <td id="animal_common_name"></td>
+                    </tr>
+                    <tr>
+                        <td>Type of Animal:</td>
+                        <td id="animal_type"></td>
+                    </tr>
+                </table>
+            </div>
+            <div style="margin-top: 20px;background-color: aqua">
+                <table>
+                    <tr>
+                        <td>Date of The Observation</td>
+                        <td><input id = "Observation_date" type="date" maxlength="3" size="10"></td>
+                    </tr>
+                    <tr>
+                        <td>Status:
+                        </td>
+                        <td> <select id="observation_status">
+                            <option value="">Confirmed</option>
+                            <option value="">Unconfirmed</option>
+                        </select></td>
+
+                    </tr>
+
+                </table>
+            </div>
+
+        </form>
+        <div class="div_but" style="text-align: center">
+
+            <button id="assign_investigator_but">RECORD OBSERVATION</button>
+            <button >RETURN</button>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

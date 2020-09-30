@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>REMOVE OBSERVATION</title>
+</head>
+<body>
+<div style="background-color: darkgray;width: fit-content">
+    <div>
+        <h4 style="text-align: center">REMOVE OBSERVATION</h4>
+        <form onsubmit="return false">
+            <div class="remove_observation" style="background-color: aqua">
+
+                <table>
+                    <tr>
+                        <td>Site Habitat:</td>
+                        <td><select id="siteHabitat_id_input">
+                            <option value="">Select one</option>
+                        </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Site Habitat ID:</td>
+                        <td id="siteHabitat_id"></td>
+                    </tr>
+                    <tr>
+                        <td>Site Habitat name:</td>
+                        <td id="siteHabitat_name"></td>
+                    </tr>
+                    <tr>
+                        <td>Site Name:</td>
+                        <td id="site_name"></td>
+                    </tr>
+                </table>
+            </div>
+
+
+            <div class="observation" style="margin-top: 20px;background-color: aqua">
+                <table>
+                    <tr>
+                        <td>Observation:</td>
+                        <td> <select id="observation_input">
+                            <option value="">Select one</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td>animal ID:</td>
+                        <td id="animal_id"></td>
+                    </tr>
+                    <tr>
+                        <td>Common Name:</td>
+                        <td id="animal_common_name"></td>
+                    </tr>
+                    <tr>
+                        <td>Observation Status:</td>
+                        <td id="observation_status"></td>
+                    </tr>
+                    <tr>
+                        <td>Observation Number:</td>
+                        <td id="observation_number"></td>
+                    </tr>
+                    <tr>
+                        <td>Survey Name:</td>
+                        <td id="survey_name"></td>
+                    </tr>
+                </table>
+            </div>
+
+        </form>
+        <div class="div_but" style="text-align: center">
+
+            <button id="assign_investigator_but">REMOVE OBSERVATION</button>
+            <button >RETURN</button>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

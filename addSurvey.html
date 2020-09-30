@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ADD SURVEY</title>
+</head>
+<body>
+<div style="background-color: darkgray;width: fit-content">
+    <div>
+        <h4 style="text-align: center">ADD SURVEY</h4>
+        <form onsubmit="return false">
+            <div class="div_addSurvey" style="background-color: aqua">
+
+                <table>
+
+                    <tr>
+                        <td>Survey ID:</td>
+                        <td><input id="survey_id" maxlength="3" size="10">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Survey Name:</td>
+                        <td> <input id="survry_name" maxlength="3" size="10">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Budget:</td>
+                        <td> <input id="survey_budget" maxlength="3" size="10">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Start Date:</td>
+                        <td><input id = "survey_startdate" type="date" maxlength="3" size="10"></td>
+                    </tr>
+                    <tr>
+                        <td>End Date:</td>
+                        <td><input id = "survey_EndDate" type="date" maxlength="3" size="10"></td>
+                    </tr>
+                    <tr>
+                        <td>Status:
+                        </td>
+                        <td> <select id="survey_status">
+                            <option value="">Ratified</option>
+                            <option value="">Unratified</option>
+                        </select></td>
+
+                    </tr>
+                </table>
+            </div>
+
+
+
+
+        </form>
+        <div class="div_but" style="text-align: center">
+
+            <button id="add_survey_but">ADD SURVEY</button>
+            <button>RETURN</button>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
