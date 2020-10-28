@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6a6a24d-8f3b-4d28-8937-d985358b499d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/observationReport.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/produceSurveysReport.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addSurvey.html" beforeDir="false" afterPath="$PROJECT_DIR$/addSurvey.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deleteSurvey.html" beforeDir="false" afterPath="$PROJECT_DIR$/deleteSurvey.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recordObservation.html" beforeDir="false" afterPath="$PROJECT_DIR$/recordObservation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/remove_observation.html" beforeDir="false" afterPath="$PROJECT_DIR$/remove_observation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/updateSurvey.html" beforeDir="false" afterPath="$PROJECT_DIR$/updateSurvey.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +78,9 @@
       <workItem from="1603790453379" duration="1263000" />
       <workItem from="1603850285114" duration="1598000" />
       <workItem from="1603852266025" duration="908000" />
-      <workItem from="1603854155064" duration="338000" />
+      <workItem from="1603854155064" duration="1058000" />
+      <workItem from="1603855888838" duration="67000" />
+      <workItem from="1603855971951" duration="128000" />
     </task>
     <servers />
   </component>
@@ -111,7 +106,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/test.html</url>
-          <line>37</line>
+          <line>50</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

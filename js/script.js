@@ -1,3 +1,8 @@
+/**
+ * @name getSingleSurvey
+ * @param surveyID
+ * @returns survey obj
+ */
 function getSingleSurvey(surveyID){
 
     $.ajax({
