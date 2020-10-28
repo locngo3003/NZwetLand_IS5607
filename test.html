@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Project</title>
+
+    <script
+            src="https://code.jquery.com/jquery-3.5.1.min.js"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+            crossorigin="anonymous">
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            //get investigator
+            $.ajax({
+                type: 'Get',
+                dataType: 'JSON',
+                url: 'https://bigeye3.herokuapp.com/api/investigators/',
+                async: false,
+                success: function (data) {
+                    // location.reload();
+
+                    i = 0;
+                    while (i < data.length) {
+                        Investigator = data[i];
+                        $("#investigator_id_input").append("<option value='" + Investigator.InvestigatorID + "'>" + Investigator.LastName + " " + Investigator.FirstName + "</option>");
+                        i = i + 1;
+                    }
+                    $("#investigator_id_input").change(function () {
+
+                        investigator = getSingleInvestigator($("#investigator_id_input").val());
+
+                        $("#investigator_id").text(investigator.InvestigatorID);
+                        $("#investigator_fname").text(investigator.FirstName);
+                        $("#investigator_lname").text(investigator.LastName);
+                        $("#investigator_hourlyrate").text(investigator.HourlyRate);
+                        console.log('investigator', investigator)
+                        assessments = assignedAssignment($("#investigator_id_input").val());
+                        console.log('assignment', assessments);
+                        $("#Assignment_input").empty();
+                        $("#Assignment_input").append("<option value=''>Select one</option>");
+                        j = 0;
+                        while (j < assessments.length) {
+                            caseID = assessments[j].Case;
+                            case1 = getSingleCase(caseID);
+
+                            $("#Assignment_input").append("<option value='" + assessments[j].id + "'>"
+                                + case1.Description + "" +
+                                " | ID: " + case1.CaseID +
+                                " | Hours: " + assessments[j].hours +
+                                "</option>");
+
+                            j++;
+                        }
+
+                        $("#case_id_input").empty();
+                        $("#case_id_input").append("<option value = ''>Select one</option>");
+                        cases = getCompleteCase($("#investigator_id_input").val());
+                        console.log(cases);
+                        j = 0;
+                        while (j < cases.length) {
+                            case1 = getSingleCase(cases[j]);
+                            console.log(case1);
+                            $("#case_id_input").append("<option value = '" + case1.CaseID + "'>" + case1.Description + "</option>");
+                            j = j + 1;
+                        }
+                        // after new cases show up, we can select
+                        $("#case_id_input").change(function () {
+                            case1 = getSingleCase($("#case_id_input").val());
+                            $("#case_ID").text(case1.CaseID);
+                            $("#case_description").text(case1.Description);
+                            $("#date").text(case1.CaseDate)
+                        });
+                    });
+                },
+                error: function (err) {
+                    console.log(err);
+                }
+            });
+
+            $("#assign_investigator_but").click(function () {
+                hours1 = $("#hours_input").val();
+                investigator1 = $("#investigator_id_input").val();
+                case1 = $("#case_id_input").val();
+                console.log("investigator:" + investigator1);
+                console.log("case: " + case1);
+
+                $.ajax({
+                    type: 'POST',
+                    dataType: 'JSON',
+                    url: 'https://bigeye3.herokuapp.com/api/assignments/',
+                    data: {
+                        hours: hours1,
+                        Investigator: investigator1,
+                        Case: case1,
+                    },
+                    success: function (data) {
+                        alert('Investigator assigned successfully');
+                        location.reload();
+                    },
+
+
+                });
+
+            });
+        });
+
+
+
+    </script>
+
+    <script src="../js/script.js"></script>
+
+
+</head>
+<body>
+
+<hr>
+please wait a while when loading form
+</body>
+</html>
