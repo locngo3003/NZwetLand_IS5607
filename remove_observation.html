@@ -21,30 +21,35 @@
 
                     i = 0;
                     while (i < data.length){
-                        sitehabitats = data[i];
+                        sitehabitats = data[i];//get a list of site habitats
                         $("#siteHabitat_id_input").append("<option value='"+sitehabitats.id+"'>" +
                             "" +sitehabitats.id+
                             " | "+sitehabitats.sitehabitatname+"\</option>");
                         i = i + 1;
                     }
                     $("#siteHabitat_id_input").change(function (){
-                        siteHabitat = getSingleSiteHabitat($("#siteHabitat_id_input").val());
+                        siteHabitat = getSingleSiteHabitat($("#siteHabitat_id_input").val());// get a site habitat by using choosing site habitat ID
                         console.log('sitehabitat',siteHabitat)
                         $("#siteHabitat_id").text(siteHabitat.id);
                         $("#siteHabitat_name").text(siteHabitat.sitehabitatname);
-                        sitename1 = siteHabitat.site;
+                        sitename1 = siteHabitat.site; // from selected site habitat which contains siteID, get site id
                         console.log('sitename1',sitename1)
-                        sitename2 = getSingleSite(sitename1)
+                        sitename2 = getSingleSite(sitename1) // from gotten site id get site infor
                         console.log('sitename2',sitename2)
-                        $("#site_name").text(sitename2.sitename);
+                        $("#site_name").text(sitename2.sitename); // show the sitename
 
-                        recordedObservations = recordedObservation($("#siteHabitat_id_input").val());
+                        recordedObservations = recordedObservation($("#siteHabitat_id_input").val());// in observation API get all observations which has same observation.sitehabiat with site habitat id
                         console.log("recordedObservations",recordedObservations)
                         $("#observation_input").empty();
+                        $("#animal_id").empty();
+                        $("#animal_common_name").empty();
+                        $("#observation_status").empty();
+                        $("#observation_number").empty();
+                        $("#survey_name").empty();
                         $("#observation_input").append("<option value=''>Select one</option>");
                         j = 0;
                         while (j<recordedObservations.length){
-                            observationAnimal = recordedObservations[j].animal;
+                            observationAnimal = recordedObservations[j].animal; // get animal by animal id
                             animal12 = getSingleanimal(observationAnimal);
 
 
@@ -54,10 +59,22 @@
                                 " | Ob Status: " + recordedObservations[j].status +
                                 " | Ob number: " + recordedObservations[j].observationnumber +
                                 "</option>");
+
                             j++;
                         }
                         $("#observation_input").change(function (){
-
+                            observation = getSingleObservation($("#observation_input").val());
+                            console.log('observation',observation)
+                            observationanimal1 = observation.animal;
+                            observationSurvey1 = observation.survey;
+                            console.log("observationanimal1",observationanimal1);
+                            animal123 = getSingleanimal(observationanimal1)
+                            survey123 = getSingleSurvey(observationSurvey1)
+                            $("#animal_id").text(animal123.id);
+                            $("#animal_common_name").text(animal123.commonname);
+                            $("#observation_status").text(observation.status);
+                            $("#observation_number").text(observation.observationnumber);
+                            $("#survey_name").text(survey123.surveyname);
 
                         })
 
@@ -103,7 +120,7 @@
             </div>
 
 
-            <div class="observation" style="margin-top: 20px;background-color: aqua">
+            <div id="observation" style="margin-top: 20px;background-color: aqua">
                 <table>
                     <tr>
                         <td>Observation:</td>

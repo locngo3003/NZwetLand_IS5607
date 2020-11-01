@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Menu</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style type="text/css">
+        body{
+            background-color: papayawhip;
+            text-align: center;
+
+        }
+        div {
+            width: 120px;
+
+            background-color: peru;
+            font-family: "Bookman Old Style";
+            text-align: center;
+            font-size: smaller;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin: 40px;
+            padding: 30px;
+            border-radius: 30px;
+            display: inline-block;
+        }
+        input {
+            font-family: "Bookman Old Style";
+            font-size: large;
+            border-radius: 10px;
+            width: 40%;
+            height: 60%;
+            background-color: lemonchiffon;
+            text-decoration-color: black;
+
+        }
+
+        #exitbut{
+            width: 100%;
+            text-align: center;
+
+            background-color: saddlebrown;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+
+    <script language="javascript" type="text/javascript">
+        function windowClose () {
+            window.open('','_parent','');
+            window.close();
+        }
+    </script>
+
+</head>
+<body>
+
+<h1><b><img src="image/logo.jpg" height="60" width="60"/>SURVEYS OFFICER</b></h1>
+<tr>
+    <td id="middlecontent">
+        <div class="polaroid">
+
+            <div class="container">
+                <p><h2> <a href="addSurvey.html">Add Survey</a></h2>
+
+                </p>
+            </div>
+        </div>
+        <div class="polaroid">
+
+            <div class="container">
+                <p><h2> <a href="deleteSurvey.html">Delete Survey</a></h2>
+
+                </p>
+            </div>
+        </div>
+        <div class="polaroid">
+
+            <div class="container">
+                <p><h2> <a href="observationReport.html">Observation Report</a></h2>
+
+                </p>
+            </div>
+        </div>
+        <div class="polaroid">
+
+            <div class="container">
+                <p><h2> <a href="produceSurveysReport.html">Produce Survey Report</a></h2>
+
+                </p>
+            </div>
+        </div>
+        <br><br>
+        <div class="polaroid">
+
+            <div class="container">
+                <p><h2> <a href="recordObservation.html">Record Observation</a></h2>
+
+                </p>
+            </div>
+        </div>
+        <div class="polaroid">
+
+            <div class="container">
+                <p><h2> <a href="remove_observation.html">Remove Observation</a></h2>
+
+                </p>
+            </div>
+        </div>
+        <div class="polaroid">
+
+            <div class="container">
+                <p><h2> <a href="updateSurvey.html">Update Survey</a></h2>
+
+                </p>
+            </div>
+        </div>
+
+
+      <br><br>
+
+
+        <div id="exitbut"><input  type="button" value="Exit" onclick="windowClose();"></div>
+
+
+
+
+</body>
+</html>

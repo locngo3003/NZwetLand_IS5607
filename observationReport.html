@@ -22,7 +22,7 @@
                         i = 0;
                         while (i < data.length){
                             observation1 = data[i];
-                            $("#department_report").append("<hr>" +
+                            $("#observation_report").append("<hr>" +
                                 " observation date : " + observation1.observationdate +"<br>"+
                                 " | ob number: " + observation1.observationnumber +"<br>"+
                                 " | status: " + observation1.status+ "<br>" );
@@ -30,7 +30,7 @@
                             animals = getanimal(observation1.animal);
                             k = 0;
                             while (k<animals.length){
-                                $("#department_report").append(
+                                $("#observation_report").append(
                                     " animal genus name : "+ animals[k].genusname+"<br>"+
                                     " animal species name : "+ animals[k].speciesname+"<br>"
                                 );
@@ -40,7 +40,7 @@
                             surveys = getsurvey(observation1.survey);
                             h=0;
                             while (h<surveys.length){
-                                $("#department_report").append(
+                                $("#observation_report").append(
                                     " survey name : "+ surveys[h].surveyname+"<br>"
 
                                 );
@@ -149,7 +149,7 @@
 <body>
 <button id="show_report">Display client report</button>
 <button >RETURN</a></button>
-<div id = "department_report" style="width: 100px;width: 1000px;background-color: aqua">
+<div id = "observation_report" style="width: 100px;width: 1000px;background-color: aqua">
 </div>
 </body>
 </html>
