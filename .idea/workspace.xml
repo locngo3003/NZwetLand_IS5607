@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6a6a24d-8f3b-4d28-8937-d985358b499d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wetlandNavigator.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/observationReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/observationReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/remove_observation.html" beforeDir="false" afterPath="$PROJECT_DIR$/remove_observation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/produceSurveysReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/produceSurveysReport.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -94,6 +89,8 @@
       <workItem from="1603935669829" duration="685000" />
       <workItem from="1603941735962" duration="4815000" />
       <workItem from="1603947037899" duration="346000" />
+      <workItem from="1604226941351" duration="208000" />
+      <workItem from="1604277765455" duration="4814000" />
     </task>
     <servers />
   </component>
@@ -117,11 +114,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/test.html</url>
-          <line>50</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/script.js</url>
           <line>5</line>
