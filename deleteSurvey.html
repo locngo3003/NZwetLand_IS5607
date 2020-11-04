@@ -19,6 +19,7 @@
                 success: function (data) {
                     // location.reload();
 
+
                     i = 0;
                     while (i < data.length){
                         surveys = data[i];
@@ -29,6 +30,7 @@
                     }
                     $("#survey_id_input").change(function (){
                         survey = getSingleSurvey($("#survey_id_input").val());
+                        console.log('surveys',survey)
                         $("#survrey_id").text(survey.id);
                         $("#survey_name").text(survey.surveyname);
                         $("#survrey_budget").text(survey.budget);

@@ -8,7 +8,6 @@
             integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
             crossorigin="anonymous">
     </script>
-
     <script>
         $(document).ready(function (){
             $.ajax({
@@ -53,6 +52,16 @@
                         alert('successfully');
                         location.reload();
                     },
+                    error: function (err) {
+                        console.log(err);
+                        errors = JSON.parse(err.responseText);
+                        $("#survey_name_err").text(errors.surveyname)
+                        $("#survey_budget_err").text(errors.budget)
+                        $("#survey_startdate_err").text(errors.startdate)
+                        $("#survey_end_err").text(errors.enddate)
+                        $("#survey_stt_err").text(errors.status)
+                        $("#survey_sps_err").text(errors.status)
+                    }
 
 
                 });
@@ -61,13 +70,38 @@
 
         })
     </script>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<div style="background-color: darkgray;width: fit-content">
+ .
+    <nav id="nav">
+        <ul id="navigation">
+            <li><a href="mainmenu.html" class="first">Main Menu</a></li>
+            <li><a href="#">Survey &raquo;</a>
+                <ul>
+                    <li><a href="addSurvey.html">Add Survey</a></li>
+                    <li><a href="updateSurvey.html">Update Survey</a></li>
+                    <li><a href="deleteSurvey.html">Delete Survey</a>
+                    <li><a href="produceSurveysReport.html">Produce survey Reports</a></li>
+
+                </ul>
+            </li>
+            <li><a href="#">Observation &raquo;</a>
+                <ul>
+                    <li><a href="recordObservation.html">Record Observation</a></li>
+                    <li><a href="remove_observation.html">Remove Observation</a></li>
+                    <li><a href="observationReport.html">Observation Report</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </nav>
+
+<div class="container">
     <div>
         <h4 style="text-align: center">ADD SURVEY</h4>
         <form onsubmit="return false">
-            <div class="div_addSurvey" style="background-color: aqua">
+            <div class="div_addSurvey" >
 
                 <table>
 
@@ -76,27 +110,31 @@
                         <td>Survey Name:</td>
                         <td> <input id="survey_name"  size="10" type="text">
                         </td>
+                        <td id="survey_name_err"></td>
                     </tr>
                     <tr>
                         <td>Budget:</td>
                         <td> <input id="survey_budget" type="text">
-
+                        <td id="survey_budget_err"></td>
                         </td>
                     </tr>
                     <tr>
                         <td>Start Date:</td>
                         <td><input id = "survey_startdate" type="date"  size="10"></td>
+                        <td id="survey_startdate_err"></td>
                     </tr>
                     <tr>
                         <td>End Date:</td>
                         <td><input id = "survey_EndDate" type="date" size="10"></td>
+                        <td id="survey_end_err"></td>
                     </tr>
                     <tr>
                         <td>Status:</td>
-                        <td>
+                        <td class="status">
                             <input type="radio" name = "status" value="Ratified">Ratified
+                            <br>
                             <input type="radio" name = "status" value="Unratified">Unratified
-
+                        <td id="survey_stt_err"></td>
 
                         </td>
                     </tr>
@@ -107,19 +145,17 @@
                                 <option value="">select one</option>
                             </select>
                         </td>
+                        <td id="survey_sps_err"></td>
                     </tr>
 
                 </table>
             </div>
 
-
-
-
         </form>
         <div class="div_but" style="text-align: center">
 
             <button id="add_survey_but">ADD SURVEY</button>
-            <button><a href="wetlandNavigator.html"/> RETURN</button>
+            <button> RETURN</button>
         </div>
 
     </div>

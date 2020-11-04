@@ -5,9 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6a6a24d-8f3b-4d28-8937-d985358b499d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addSurvey.html" beforeDir="false" afterPath="$PROJECT_DIR$/addSurvey.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleteSurvey.html" beforeDir="false" afterPath="$PROJECT_DIR$/deleteSurvey.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observationReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/observationReport.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/produceSurveysReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/produceSurveysReport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recordObservation.html" beforeDir="false" afterPath="$PROJECT_DIR$/recordObservation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/remove_observation.html" beforeDir="false" afterPath="$PROJECT_DIR$/remove_observation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/updateSurvey.html" beforeDir="false" afterPath="$PROJECT_DIR$/updateSurvey.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wetlandNavigator.html" beforeDir="false" afterPath="$PROJECT_DIR$/wetlandNavigator.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +99,12 @@
       <workItem from="1603941735962" duration="4815000" />
       <workItem from="1603947037899" duration="346000" />
       <workItem from="1604226941351" duration="208000" />
-      <workItem from="1604277765455" duration="4814000" />
+      <workItem from="1604277765455" duration="6121000" />
+      <workItem from="1604363925841" duration="894000" />
+      <workItem from="1604368998720" duration="107000" />
+      <workItem from="1604369484294" duration="4802000" />
+      <workItem from="1604450384561" duration="6435000" />
+      <workItem from="1604458414288" duration="896000" />
     </task>
     <servers />
   </component>
@@ -116,8 +130,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/script.js</url>
-          <line>5</line>
-          <option name="timeStamp" value="2" />
+          <line>101</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

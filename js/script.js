@@ -127,6 +127,33 @@ function recordedObservation(siteHabitat){
     return recordedObservations;
 }
 
+function assignedsiteHabitat(siteHabitat){
+    //return assessment objects
+    assignedsiteHabitats = [];
+    $.ajax({
+        type: 'Get',
+        dataType: 'JSON',
+        async:false,
+        url: 'https://nzwetland.herokuapp.com/api/Sitehabitat/',
+        success: function (data) {
+            // location.reload();
+            i = 0;
+            while (i<data.length){
+                assignedsiteHBT = data[i];
+                if (assignedsiteHBT.id == siteHabitat){
+                    assignedsiteHabitats.push(assignedsiteHBT);
+                }
+                i=i+1;
+            }
+
+        },
+        error: function (err) {
+            console.log(err);
+        }
+
+    });
+    return assignedsiteHabitats;
+}
 
 
 
