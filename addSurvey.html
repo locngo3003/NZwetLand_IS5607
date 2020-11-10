@@ -72,36 +72,38 @@
     </script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
- .
-    <nav id="nav">
-        <ul id="navigation">
-            <li><a href="mainmenu.html" class="first">Main Menu</a></li>
-            <li><a href="#">Survey &raquo;</a>
-                <ul>
-                    <li><a href="addSurvey.html">Add Survey</a></li>
-                    <li><a href="updateSurvey.html">Update Survey</a></li>
-                    <li><a href="deleteSurvey.html">Delete Survey</a>
-                    <li><a href="produceSurveysReport.html">Produce survey Reports</a></li>
+<body id="page5">
 
-                </ul>
-            </li>
-            <li><a href="#">Observation &raquo;</a>
-                <ul>
-                    <li><a href="recordObservation.html">Record Observation</a></li>
-                    <li><a href="remove_observation.html">Remove Observation</a></li>
-                    <li><a href="observationReport.html">Observation Report</a></li>
-                </ul>
-            </li>
+<nav id="nav">
+    <ul id="navigation">
+        <li><a href="mainmenu.html" class="first">Main Menu</a></li>
+        <li><a href="#">Survey &raquo;</a>
+            <ul>
+                <li><a href="addSurvey.html">Add Survey</a></li>
+                <li><a href="deleteSurvey.html">Delete Survey</a></li>
+                <li><a href="updateSurvey.html">Update survey</a>
+                <li><a href="produceSurveysReport.html">Produce Survey Reports</a></li>
 
-        </ul>
-    </nav>
+            </ul>
+        </li>
+
+        <li><a href="#">Observation &raquo; </a>
+            <ul>
+                <li><a href="recordObservation.html">Record Observation</a></li>
+                <li><a href="remove_observation.html">Remove observation</a></li>
+                <li><a href="observationReport.html">Observations Report </a></li>
+            </ul></li>
+
+        <button id="logoutBut" >Log out</button>
+    </ul>
+</nav>
+<br>
 
 <div class="container">
     <div>
         <h4 style="text-align: center">ADD SURVEY</h4>
         <form onsubmit="return false">
-            <div class="div_addSurvey" >
+
 
                 <table>
 
@@ -149,17 +151,19 @@
                     </tr>
 
                 </table>
-            </div>
+
 
         </form>
-        <div class="div_but" style="text-align: center">
+
 
             <button id="add_survey_but">ADD SURVEY</button>
-            <button> RETURN</button>
-        </div>
+            <button ><a href="mainmenu.html">RETURN</a></button>
+
 
     </div>
 </div>
-
+<div id="footer">
+    Copyright @ 2020 By Nz Wetland Group, Unitec, New Zealand.
+</div>
 </body>
 </html>

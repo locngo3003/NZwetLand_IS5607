@@ -9,14 +9,13 @@
       <change beforePath="$PROJECT_DIR$/addSurvey.html" beforeDir="false" afterPath="$PROJECT_DIR$/addSurvey.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deleteSurvey.html" beforeDir="false" afterPath="$PROJECT_DIR$/deleteSurvey.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/observationReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/observationReport.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/produceSurveysReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/produceSurveysReport.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recordObservation.html" beforeDir="false" afterPath="$PROJECT_DIR$/recordObservation.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/remove_observation.html" beforeDir="false" afterPath="$PROJECT_DIR$/remove_observation.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/updateSurvey.html" beforeDir="false" afterPath="$PROJECT_DIR$/updateSurvey.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wetlandNavigator.html" beforeDir="false" afterPath="$PROJECT_DIR$/wetlandNavigator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wetlandNavigator.html" beforeDir="false" afterPath="$PROJECT_DIR$/mainmenu.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +103,9 @@
       <workItem from="1604368998720" duration="107000" />
       <workItem from="1604369484294" duration="4802000" />
       <workItem from="1604450384561" duration="6435000" />
-      <workItem from="1604458414288" duration="896000" />
+      <workItem from="1604458414288" duration="1869000" />
+      <workItem from="1604882379513" duration="8835000" />
+      <workItem from="1604968586290" duration="4943000" />
     </task>
     <servers />
   </component>
@@ -112,6 +113,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="297" y="23" key="CommitChangelistDialog2" timestamp="1604971774984">
+      <screen x="0" y="23" width="1440" height="838" />
+    </state>
+    <state x="297" y="23" key="CommitChangelistDialog2/0.23.1440.838@0.23.1440.838" timestamp="1604971774984" />
     <state x="681" y="352" key="Github.ShareDialog" timestamp="1601437653102">
       <screen x="0" y="23" width="1440" height="838" />
     </state>

@@ -174,16 +174,50 @@
                     },
                     error: function (err) {
                         console.log(err);
+                        errors = JSON.parse(err.responseText);
+                        $("#survey_name_err").text(errors.surveyname)
+                        $("#survey_budget_err").text(errors.budget)
+                        $("#survey_startdate_err").text(errors.startdate)
+                        $("#survey_end_err").text(errors.enddate)
+                        $("#survey_stt_err").text(errors.status)
+                        $("#survey_sps_err").text(errors.status)
                     }
                 });
             })
         })
     </script>
+    <link rel="stylesheet" href="css/styles.css">
 
 </head>
-<body>
+<body id="page5">
+
+<nav id="nav">
+    <ul id="navigation">
+        <li><a href="mainmenu.html" class="first">Main Menu</a></li>
+        <li><a href="#">Survey &raquo;</a>
+            <ul>
+                <li><a href="addSurvey.html">Add Survey</a></li>
+                <li><a href="deleteSurvey.html">Delete Survey</a></li>
+                <li><a href="updateSurvey.html">Update survey</a>
+                <li><a href="produceSurveysReport.html">Produce Survey Reports</a></li>
+
+            </ul>
+        </li>
+
+        <li><a href="#">Observation &raquo; </a>
+            <ul>
+                <li><a href="recordObservation.html">Record Observation</a></li>
+                <li><a href="remove_observation.html">Remove observation</a></li>
+                <li><a href="observationReport.html">Observations Report </a></li>
+            </ul></li>
+
+        <button id="logoutBut" >Log out</button>
+    </ul>
+</nav>
+<br>
+
 <div class ="container">
-    <div>
+
         <h4 style="text-align: center">UPDATE SURVEY</h4>
         <form onsubmit="return false">
             Survey's Detail
@@ -235,10 +269,12 @@ Update Detail
                     <tr>
                         <td>Survey name:</td>
                         <td><input id="survey_name_update" type="text"></td>
+                        <td id="survey_name_err"></td>
                     </tr>
                     <tr>
                         <td>Budget:</td>
                         <td><input id="survrey_budget_update" type="text"></td>
+                        <td id="survey_budget_err"></td>
                     </tr>
                     <tr>
                         <td>Status:</td>
@@ -247,14 +283,17 @@ Update Detail
                             <br>
                             <input type="radio" name = "status" value="Unratified">Unratified
                         </td>
+                        <td id="survey_stt_err"></td>
                     </tr>
                     <tr>
                         <td>Start Date:</td>
                         <td><input id = "survey_startdate_update" type="date"  size="10"></td>
+                        <td id="survey_startdate_err"></td>
                     </tr>
                     <tr>
                         <td>End Date:</td>
                         <td><input id = "survey_EndDate_update" type="date" size="10"></td>
+                        <td id="survey_end_err"></td>
                     </tr>
                     <tr>
                         <td>Sponsor Name:</td>
@@ -263,20 +302,22 @@ Update Detail
                                 <option value="">Select one</option>
                             </select>
                         </td>
-
+                        <td id="survey_sps_err"></td>
                     </tr>
                 </table>
             </div>
 
         </form>
-        <div class="div_but" style="text-align: center">
+
 
             <button id="update_survey_but">UPDATE SURVEY</button>
-            <button>RETURN</button>
-        </div>
+            <button ><a href="mainmenu.html">RETURN</a></button>
 
-    </div>
+
+
 </div>
-
+<div id="footer">
+    Copyright @ 2020 By Nz Wetland Group, Unitec, New Zealand.
+</div>
 </body>
 </html>

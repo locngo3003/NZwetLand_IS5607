@@ -39,6 +39,8 @@
                 },
                 error: function (err) {
                     console.log(err);
+                    errors = JSON.parse(err.responseText);
+                    $("#survey_name_err").text(errors.surveyname)
                 }
             });
             $("#delete_but").click(function () {
@@ -55,25 +57,56 @@
                         console.log(err);
                         errors = JSON.parse(err.responseText);
                         console.log(errors);
-                        $("#department_id_input_err").text(errors.name);
+                        $("#survey_id_input_err").text(errors.survey);
                     }
                 });
             });
         })
     </script>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-<div style="background-color: darkgray;width: fit-content">
-    <div>
+<body id="page1">
+
+<nav id="nav">
+    <ul id="navigation">
+        <li><a href="mainmenu.html" class="first">Main Menu</a></li>
+        <li><a href="#">Survey &raquo;</a>
+            <ul>
+                <li><a href="addSurvey.html">Add Survey</a></li>
+                <li><a href="deleteSurvey.html">Delete Survey</a></li>
+                <li><a href="updateSurvey.html">Update survey</a>
+                <li><a href="produceSurveysReport.html">Produce Survey Reports</a></li>
+
+            </ul>
+        </li>
+
+        <li><a href="#">Observation &raquo; </a>
+            <ul>
+                <li><a href="recordObservation.html">Record Observation</a></li>
+                <li><a href="remove_observation.html">Remove observation</a></li>
+                <li><a href="observationReport.html">Observations Report </a></li>
+            </ul></li>
+
+        <button id="logoutBut" >Log out</button>
+    </ul>
+</nav>
+<br>
+<div class="container">
+
         <h4 style="text-align: center">DELETE SURVEY</h4>
         <form onsubmit="return false">
-            <div class="div_deletesurvey" style="background-color: aqua">
-                <p><label> Survey: </label>
-                    <select id="survey_id_input">
-                        <option value="">Select one</option>
-                    </select>
-                </p>
+
+
                 <table>
+                    <tr>
+                        <td>Survey: </td>
+                        <td>
+                            <select id="survey_id_input">
+                                <option value="">Select one</option>
+                            </select>
+                        </td>
+                        <td id="survey_id_input_err"></td>
+                    </tr>
                     <tr>
                         <td>Survey ID:</td>
                         <td id="survrey_id"></td>
@@ -91,17 +124,19 @@
                         <td id="survey_status"></td>
                     </tr>
                 </table>
-            </div>
+
 
         </form>
-        <div class="div_but" style="text-align: center">
+
 
             <button id="delete_but">DELETE</button>
-            <button >RETURN</button>
-        </div>
+            <button ><a href="mainmenu.html">RETURN</a></button>
 
-    </div>
+
+
 </div>
-
+<div id="footer">
+    Copyright @ 2020 By Nz Wetland Group, Unitec, New Zealand.
+</div>
 </body>
 </html>
