@@ -155,8 +155,44 @@ function assignedsiteHabitat(siteHabitat){
     return assignedsiteHabitats;
 }
 
+function getSingleSitehabitatlanduse(sitehabitatlanduseID){
+    //return case object
+    $.ajax({
+        type: 'Get',
+        dataType: 'JSON',
+        async:false,
+        url: 'https://nzwetland.herokuapp.com/api/sitehabitatlanduse/'+sitehabitatlanduseID+'/',
+        success: function (data) {
+            // location.reload();
+            sitehabitatlanduse = data;
 
+        },
+        error: function (err) {
+            console.log(err);
+        }
 
+    });
+    return sitehabitatlanduse;
+}
+function getSinglelanduse(landuseID){
+    //return case object
+    $.ajax({
+        type: 'Get',
+        dataType: 'JSON',
+        async:false,
+        url: 'https://nzwetland.herokuapp.com/api/landuse/'+landuseID+'/',
+        success: function (data) {
+            // location.reload();
+            landuse = data;
+
+        },
+        error: function (err) {
+            console.log(err);
+        }
+
+    });
+    return landuse;
+}
 
 
 

@@ -226,7 +226,7 @@ ul#navigation ul li a {
     background: whitesmoke;
 }
 
-/*Produce Habitats report*/
+/*Produce Observation report*/
 #page2   button {
     font-family: "Bookman Old Style";
     width: 270px;
@@ -244,14 +244,15 @@ ul#navigation ul li a {
     margin: 4px;
     box-shadow: 0 0 20px 9px whitesmoke;
 }
-#page2 #habitat_report{
-    border-radius: 30px;
+#page2 #habitat_report {
+    border-radius: 20px;
     font-family: "Bookman Old Style";
-    background: linear-gradient(to right, darkseagreen,whitesmoke);
+    background: linear-gradient(to right, darkseagreen, whitesmoke);
     box-shadow: 0 0 20px 9px olive;
-    margin: auto;
-    width: fit-content;
-    display: flow;
+    margin: 40px auto;
+    width: 600px;
+    text-align: center;
+    height: fit-content;
 }
 
 #page2 #footer{

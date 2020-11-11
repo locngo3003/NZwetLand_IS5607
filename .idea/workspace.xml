@@ -6,16 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="d6a6a24d-8f3b-4d28-8937-d985358b499d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addSurvey.html" beforeDir="false" afterPath="$PROJECT_DIR$/addSurvey.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deleteSurvey.html" beforeDir="false" afterPath="$PROJECT_DIR$/deleteSurvey.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/observationReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/observationReport.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/produceSurveysReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/produceSurveysReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recordObservation.html" beforeDir="false" afterPath="$PROJECT_DIR$/recordObservation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/remove_observation.html" beforeDir="false" afterPath="$PROJECT_DIR$/remove_observation.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/updateSurvey.html" beforeDir="false" afterPath="$PROJECT_DIR$/updateSurvey.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wetlandNavigator.html" beforeDir="false" afterPath="$PROJECT_DIR$/mainmenu.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +100,10 @@
       <workItem from="1604450384561" duration="6435000" />
       <workItem from="1604458414288" duration="1869000" />
       <workItem from="1604882379513" duration="8835000" />
-      <workItem from="1604968586290" duration="4943000" />
+      <workItem from="1604968586290" duration="13095000" />
+      <workItem from="1605056434073" duration="975000" />
+      <workItem from="1605064427709" duration="2422000" />
+      <workItem from="1605067811717" duration="961000" />
     </task>
     <servers />
   </component>
@@ -125,17 +123,17 @@
       <screen x="0" y="23" width="1440" height="838" />
     </state>
     <state x="609" y="160" key="Github.UntrackedFilesDialog/0.23.1440.838@0.23.1440.838" timestamp="1601437658850" />
-    <state x="637" y="185" width="670" height="676" key="search.everywhere.popup" timestamp="1601436019088">
+    <state x="637" y="185" width="670" height="676" key="search.everywhere.popup" timestamp="1604977430836">
       <screen x="0" y="23" width="1440" height="838" />
     </state>
-    <state x="637" y="185" width="670" height="676" key="search.everywhere.popup/0.23.1440.838@0.23.1440.838" timestamp="1601436019088" />
+    <state x="637" y="185" width="670" height="676" key="search.everywhere.popup/0.23.1440.838@0.23.1440.838" timestamp="1604977430836" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/script.js</url>
-          <line>101</line>
+          <line>168</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
