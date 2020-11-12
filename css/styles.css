@@ -137,7 +137,7 @@ ul#navigation ul li a {
 }
 
 /*Delete Habitat*/
-#page1 .container {
+#deletesurvey .container {
     border-radius: 20px;
     padding: 5%;
     margin: 5%;
@@ -148,13 +148,13 @@ ul#navigation ul li a {
     margin-left: auto;
     background: linear-gradient(to right, whitesmoke, darkolivegreen);
 }
-#page1 #logoutBut{
+#deletesurvey #logoutBut{
     width: 100px;
     margin: 4px;
     box-shadow: 0 0 20px 9px whitesmoke;
 }
 
-#page1  button {
+#deletesurvey button {
     font-family: "Bookman Old Style";
     width: 220px;
     margin: 5px;
@@ -167,7 +167,7 @@ ul#navigation ul li a {
     margin-left: auto;
     box-shadow: 0 0 20px 9px whitesmoke;
 }
-#page1 div{
+#deletesurvey div{
     border-radius: 30px;
     margin: 10px;
     padding:10px;
@@ -175,12 +175,12 @@ ul#navigation ul li a {
     height: 100%;
     box-shadow: 0 0 20px 9px whitesmoke;
 }
-#page1 select{
+#deletesurvey select{
     border-radius: 30px;
     height: 30px;
-    width: 50%;
+
 }
-#page1 td{
+#deletesurvey td{
     font-size: large;
     font-family: "Bookman Old Style";
     width: 120px;
@@ -189,7 +189,7 @@ ul#navigation ul li a {
     height: 100%;
     border-radius: 20px;
 }
-#page1 input{
+#deletesurvey input{
     text-align: center;
     font-size: large;
     margin: 30px;
@@ -200,19 +200,19 @@ ul#navigation ul li a {
     transition: .5s;
     font-family: "Bookman Old Style";
 }
-#page1 h1{
+#deletesurvey h1{
     font-size: xx-large;
     font-family: "Bookman Old Style";
     text-align: center;
 }
 
-#page1 label{
+#deletesurvey label{
     font-size: large;
     font-family: "Bookman Old Style";
     text-align: center;
 }
 
-#page1 #footer{
+#deletesurvey #footer{
     font-family: "Bookman Old Style";
     box-shadow: 0 0 20px 9px whitesmoke;
     color: olivedrab;
@@ -477,11 +477,11 @@ ul#navigation ul li a {
     font-size: large;
     margin: 15px;
     padding: 15px;
-  
+
     height: fit-content;
     border-radius: 30px;
     transition: .5s;
-    
+
 }
 
 #page5  h1{

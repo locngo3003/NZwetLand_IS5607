@@ -168,8 +168,13 @@
                         "sponsor":sponsor2
                     },
                     success: function (data) {
-                        alert('successfully');
-                        console.log(data);
+                        alert('survey updated successfully');
+                        if (confirm(' update another survey?')) {
+                            location.reload();}
+                        else{
+                            console.log("");
+                            window.location.href = "surveyofficermenu.html";
+                        }
 
                     },
                     error: function (err) {

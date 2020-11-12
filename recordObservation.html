@@ -188,8 +188,13 @@
                         survey:surveyID,
                     },
                     success: function (data) {
-                        alert('successfully');
-                        location.reload();
+                        alert('Observation Recorded successfully');
+                        if (confirm(' Record another observation?')) {
+                            location.reload();}
+                        else{
+                            console.log("");
+                            window.location.href = "surveyofficermenu.html";
+                        }
                     },
 
                     error: function (err) {

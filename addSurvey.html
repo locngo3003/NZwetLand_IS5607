@@ -49,8 +49,13 @@
                         sponsor:sponsor1,
                     },
                     success: function (data) {
-                        alert('successfully');
-                        location.reload();
+                        alert('survey added successfully');
+                        if (confirm(' Add another Survey?')) {
+                            location.reload();}
+                        else{
+                            console.log("");
+                            window.location.href = "surveyofficermenu.html";
+                        }
                     },
                     error: function (err) {
                         console.log(err);
