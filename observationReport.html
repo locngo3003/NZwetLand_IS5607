@@ -24,8 +24,8 @@
                             observation1 = data[i];
                             $("#habitat_report").append("<hr>" +
                                 " observation date : " + observation1.observationdate +"<br>"+
-                                " | ob number: " + observation1.observationnumber +"<br>"+
-                                " | status: " + observation1.status+ "<br>" );
+                                " ob number: " + observation1.observationnumber +"<br>"+
+                                " status: " + observation1.status+ "<br>" );
 
                             animals = getanimal(observation1.animal);
                             k = 0;
@@ -50,7 +50,7 @@
                             sitehabitats = getsitehabitat(observation1.sitehabitat);
                             m=0;
                             while (m<sitehabitats.length){
-                                $("#habitat_report").append("<hr>"+
+                                $("#habitat_report").append(
                                     " site habitat name : "+ sitehabitats[m].sitehabitatname
 
                                 );
